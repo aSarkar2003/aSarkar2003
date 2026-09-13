@@ -1,0 +1,85 @@
+# Site Settings
+title: Atanu Sarkar
+tagline: Turning Data, Code & Creativity into Real-World Solutions
+description: >-
+  Full-stack developer and creative designer building practical, 
+  user-friendly solutions at the intersection of technology and design.
+
+url: https://yourusername.github.io
+baseurl: /portfolio-repo-name
+
+author:
+  name: Atanu Sarkar
+  email: your.email@example.com
+  location: Vellore, Tamil Nadu, India
+
+# Social Links
+social:
+  github: https://github.com/yourusername
+  linkedin: https://linkedin.com/in/yourusername
+  twitter: https://twitter.com/yourusername
+
+# Theme
+theme: jekyll-theme-cayman
+
+# Alternative: Use minimal theme for more control
+# theme: jekyll-theme-minimal
+
+# You can also use a remote theme:
+# remote_theme: pages-themes/cayman@v0.2.0
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO & Meta
+lang: en_US
+timezone: Asia/Kolkata
+
+# Exclude from processing
+exclude:
+  - .github/
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Include in processing
+include:
+  - .nojekyll
+  - assets
+
+# Permalink structure
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections_dir: _collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: /assets/images/default-og.png
+
+# Custom Variables (for styling)
+colors:
+  primary: "#0f2027"
+  secondary: "#203a43"
+  tertiary: "#2c5364"
+  accent: "#00c6ff"
+  light: "#f5f7fa"
+  text: "#333"
+
+fonts:
+  primary: "'Poppins', sans-serif"
